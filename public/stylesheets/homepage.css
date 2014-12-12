@@ -1,0 +1,476 @@
+
+.install-app-widget-link .install-app-body {
+    background: url("//s3-media1.ak.yelpcdn.com/assets/2/www/img/731dcc3ca0bc/gfx/homepage/homepage_sprite.png") no-repeat scroll 10px -290px rgba(0, 0, 0, 0);
+    margin-left: -15px;
+    min-height: 127px;
+    padding-left: 140px;
+}
+.install-app-widget-sms .install-app-body {
+    background: url("//s3-media3.ak.yelpcdn.com/assets/2/www/img/14d0a015ecd1/devices/phones_small.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    min-height: 130px;
+    padding-left: 112px;
+}
+@media not all, (min-resolution: 192dpi) {
+.install-app-widget-sms .install-app-body {
+    background-image: url("//s3-media4.ak.yelpcdn.com/assets/2/www/img/39938dda7d39/devices/phones_small_2x.png");
+    background-size: 100px 130px;
+}
+}
+.ltie8 .install-app-sms {
+    display: none;
+}
+.sidebar .ysection, .sidebar .ywidget {
+    border-bottom: 1px solid #e5e5e1;
+    margin-bottom: 18px;
+    padding-bottom: 17px;
+}
+.sidebar .ysection.user-scorecard, .sidebar .ywidget.user-scorecard {
+    border-bottom: 1px solid #e5e5e1;
+    padding-bottom: 8px;
+}
+.sidebar .ysection h3, .sidebar .ywidget h3 {
+    margin-bottom: 12px;
+}
+.main .ysection {
+    margin-bottom: 30px;
+}
+.main .ysection h2 {
+    margin-bottom: 12px;
+}
+#activity-feed .feeds {
+    position: relative;
+}
+#activity-feed .ylist-bordered {
+    border-top: 1px solid #e5e5e1;
+}
+#activity-feed .item-title {
+    display: table;
+    margin-bottom: 6px;
+}
+#activity-feed .item-title .biz-name {
+    font-weight: normal;
+}
+#activity-feed .title-text {
+    display: table-cell;
+    width: 100%;
+}
+#activity-feed .title-text b {
+    font-weight: normal;
+}
+.ltie8 #activity-feed .title-text {
+    float: left;
+    width: 450px;
+}
+#activity-feed .time-stamp {
+    display: table-cell;
+    padding-left: 15px;
+    text-align: right;
+    white-space: nowrap;
+}
+.ltie8 #activity-feed .time-stamp {
+    float: right;
+}
+#activity-feed .review-block .item-title, #activity-feed .biz_photo-block .item-title, #activity-feed .user_photo-block .item-title, #activity-feed .event-block .item-title, #activity-feed .event_subscription-block .item-title {
+    margin-bottom: 12px;
+}
+#activity-feed .biz-listing-medium, #activity-feed .event-listing-large {
+    margin-bottom: 6px;
+}
+#activity-feed .photo-box-list {
+    margin: 0;
+}
+#activity-feed .photo-box-list li {
+    margin: 0 12px 12px 0;
+}
+#activity-feed .triggers, #activity-feed .show-comments-trigger {
+    font-size: 12px;
+    line-height: 1.5em;
+}
+#activity-feed .feedback-box .media-avatar {
+    margin-right: 6px;
+}
+#activity-feed .activity-feed-show-more {
+    margin-top: 6px;
+}
+#activity-feed .activity-feed-show-more li {
+    padding: 6px 0;
+}
+.ltie8 #activity-feed .activity-feed-show-more .media-block {
+    float: left;
+}
+#activity-feed p.no-activity, #activity-feed p.no-recent-activity {
+    padding: 35px 0;
+    text-align: center;
+}
+.rotd .rating-large {
+    margin: 6px 0;
+}
+#write-next-review .content {
+    float: right;
+    position: relative;
+}
+#write-next-review .review-widget {
+    padding: 12px;
+    width: 530px;
+}
+#write-next-review .review-widget.color-blue {
+    background-color: #ebeff6;
+    border-color: #ccccc8;
+}
+#write-next-review .review-widget .guidelines {
+    top: 11px;
+}
+#write-next-review .review-widget .review-textbox {
+    width: 528px;
+}
+#write-next-review .review-widget .review-textbox textarea, #write-next-review .review-widget .review-textbox .hidden-text-measurer {
+    width: 508px;
+}
+#write-next-review .review-widget .suggestion-message {
+    margin-top: 9px;
+}
+#write-next-review .suggestion-container {
+    position: relative;
+}
+#write-next-review .suggestion-container .biz-photo-box {
+    left: -86px;
+    position: absolute;
+    top: -13px;
+}
+#write-next-review .suggestions:after, #write-next-review .suggestions:before {
+    border: medium solid transparent;
+    content: " ";
+    height: 0;
+    position: absolute;
+    right: 100%;
+    width: 0;
+}
+#write-next-review .suggestions:after {
+    border-right-color: #fdf5d6;
+    border-width: 10px;
+    top: 19px;
+}
+#write-next-review .suggestions:before {
+    border-right-color: #fc0;
+    border-width: 11px;
+    top: 18px;
+}
+#write-next-review .color-blue .suggestions:after {
+    border-right-color: #ebeff6;
+    border-width: 10px;
+    top: 19px;
+}
+#write-next-review .color-blue .suggestions:before {
+    border-right-color: #ccccc8;
+    border-width: 11px;
+    top: 18px;
+}
+#write-next-review .suggestions .suggestion-item {
+    display: none;
+}
+#write-next-review .suggestions .suggestion-item.first {
+    display: block;
+}
+#write-next-review .media-title .biz-name {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+#write-next-review .media-title .block-suggestion {
+    cursor: pointer;
+    margin-left: 3px;
+}
+#write-next-review .suggestions .expanded .media-title .block-suggestion {
+    visibility: hidden;
+}
+#write-next-review .review-nav {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
+#write-next-review .nav-button {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    cursor: pointer;
+    float: left;
+    margin: 0 1px;
+    padding: 0;
+}
+#write-next-review .review-nav.disabled {
+    visibility: hidden;
+}
+#write-next-review .nav-button i {
+    display: block;
+    opacity: 0.6;
+    position: relative;
+}
+#write-next-review .nav-button:hover i {
+    opacity: 1;
+}
+#write-next-review .nav-button.disabled i {
+    cursor: default;
+    opacity: 0.3;
+}
+.ltie9 #write-next-review .nav-button.disabled i {
+}
+#write-next-review .suggestion {
+    display: none;
+}
+#write-next-review .suggestion-type {
+    color: #333;
+    float: right;
+    font-size: 12px;
+    margin-top: 8px;
+}
+#write-next-review .suggestions .expanded .suggestion-type {
+    display: none;
+}
+#write-next-review .auto-save {
+    display: none;
+    float: right;
+    margin-top: 8px;
+}
+#write-next-review .post-review-actions {
+    display: none;
+    margin-top: 10px;
+}
+#write-next-review .suggestions .expanded .post-review-actions {
+    display: block;
+}
+#write-next-review .share-buttons {
+    display: none;
+    float: left;
+    line-height: 28px;
+}
+#write-next-review .suggestions .expanded .share-buttons {
+    display: block;
+}
+#write-next-review .action-buttons {
+    display: none;
+    float: right;
+}
+#write-next-review .action-buttons .cancel {
+    margin-right: 10px;
+}
+#write-next-review .post-review-actions .saving-msg {
+    float: right;
+    margin: 10px 5px 7px 0;
+}
+#best-of-yelp-module > .content {
+    border: 1px solid #e5e5e1;
+}
+#best-of-yelp-main {
+    height: 530px;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+#best-of-yelp-main .ylist-bordered li {
+    padding: 12px 0 11px;
+}
+#best-of-yelp-main .ylist-bordered li:first-child {
+    padding-top: 0;
+}
+#best-of-yelp-main .ylist-bordered li.last {
+    border-bottom: medium none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#best-of-yelp-main .ylist .display-table {
+    margin-bottom: 0;
+}
+#best-of-yelp-main .media-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 350px;
+}
+#best-of-yelp-main .navigation {
+    background-color: #f5f5f1;
+    float: left;
+    position: relative;
+    width: 175px;
+    z-index: 1;
+}
+#best-of-yelp-main .navigation ol {
+    left: 0;
+    position: relative;
+    top: 0;
+}
+#best-of-yelp-main .navigation li {
+    border-right: 1px solid #e5e5e1;
+}
+#best-of-yelp-main .navigation li.selected {
+    border-right: medium none;
+}
+#best-of-yelp-main .navigation li a {
+    background: linear-gradient(white, #f0f0f0) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-bottom: 1px solid #e5e5e1;
+    display: block;
+    height: 26px;
+    line-height: 1.1;
+    padding: 6px 6px 5px;
+    text-decoration: none;
+}
+#best-of-yelp-main .navigation li a:hover {
+    background: linear-gradient(#fafafa, #e9e9e9) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+#best-of-yelp-main .navigation li.selected a {
+    background: none repeat scroll 0 0 #fff;
+    cursor: default;
+}
+#best-of-yelp-main .navigation li .review-count {
+    color: #999;
+    font-size: 11px;
+}
+#best-of-yelp-main .navigation li .category-title {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#best-of-yelp-main .navigation li.no-count .category-title {
+    line-height: 27px;
+}
+#best-of-yelp-main .navigation li.selected .category-title {
+    color: #535353;
+}
+#best-of-yelp-main .navigation .BOY-icon {
+    float: left;
+    margin-right: 5px;
+    opacity: 0.6;
+    position: relative;
+    top: 3px;
+}
+#best-of-yelp-main .navigation li.selected .BOY-icon {
+    opacity: 1;
+}
+#best-of-yelp-main .stage {
+    float: right;
+    margin-left: -200px;
+    position: relative;
+    width: 100%;
+}
+#best-of-yelp-main .main-content {
+    margin: 12px 12px 12px 187px;
+    position: relative;
+}
+#best-of-yelp-main .main-content .header {
+    border-bottom: 1px solid #e5e5e1;
+    margin-bottom: 7px;
+    padding-bottom: 3px;
+}
+#best-of-yelp-main .main-content dt {
+    float: left;
+    margin-right: 2px;
+}
+#yelp-three-column-pitch {
+    background: linear-gradient(#fff, #f5f5f5) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #e5e5e1;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+#yelp-three-column-pitch li {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #e5e5e1;
+    box-sizing: border-box;
+    float: left;
+    padding: 12px;
+    width: 33.3%;
+}
+#yelp-three-column-pitch li:first-child {
+    border-left: medium none;
+}
+#yelp-three-column-pitch li:last-child {
+    border-right: medium none;
+}
+#yelp-three-column-pitch .link-block {
+    color: #333;
+    display: block;
+}
+#yelp-three-column-pitch .link-block:hover {
+    text-decoration: none;
+}
+#yelp-three-column-pitch p {
+    margin-bottom: 0;
+}
+#yelp-three-column-pitch i {
+    float: right;
+}
+#yelp-three-column-pitch .pitch-text {
+    float: left;
+}
+#yelp-three-column-pitch .mobile .pitch-text {
+    width: 108px;
+}
+#yelp-three-column-pitch .weekly .pitch-text {
+    width: 118px;
+}
+#yelp-three-column-pitch .social .pitch-text {
+    width: 126px;
+}
+#yelp-three-column-pitch .press .pitch-text {
+    width: 118px;
+}
+#yelp-three-column-pitch .weekly i {
+    margin-top: 10px;
+}
+#neighborhoods-list .content {
+    position: relative;
+}
+#neighborhoods-list .column-container {
+    margin: 0 -15px;
+}
+#neighborhoods-list .column-set {
+    box-sizing: border-box;
+    float: left;
+    min-height: 1px;
+    padding: 0 15px;
+    width: 25%;
+}
+#neighborhoods-list .column-set li {
+    margin-bottom: 6px;
+}
+#signup-pitch {
+    background: linear-gradient(white, #fdf5d6) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #fc0;
+    border-radius: 7px;
+    overflow: hidden;
+}
+#signup-pitch p {
+    font-size: 16px;
+    line-height: 1.3125em;
+}
+#signup-pitch .content {
+    background: url("//s3-media1.ak.yelpcdn.com/assets/2/www/img/2b7fc3fbe074/gfx/homepage/burst_bg.png") no-repeat scroll right bottom transparent;
+    padding: 12px;
+}
+.ltie8 #signup-pitch .content {
+    background-color: #fffee5;
+}
+#city-list ul {
+    float: left;
+    padding-right: 2.5%;
+    width: 22%;
+}
+#city-list li {
+    margin-bottom: 5px;
+}
+.sidebar .google-ads-block {
+    border-bottom: 1px solid #e5e5e1;
+    margin-bottom: 18px;
+    padding-bottom: 17px;
+}
+.main .googlead-box {
+    margin-bottom: 30px;
+}
+#neighborhoods-list .column-container:before, #neighborhoods-list .column-container:after {
+    content: " ";
+    display: table;
+}
+#neighborhoods-list .column-container:after {
+    clear: both;
+}

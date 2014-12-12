@@ -1,0 +1,178 @@
+<html lang="en" class="js" xmlns:fb="http://www.facebook.com/2008/fbml">
+	<!--<![endif]-->
+	<head>
+		<title>Write a Review | Yelp</title>
+		<link href="/stylesheets/style.css" media="all" type="text/css" rel="stylesheet">
+		<link href="/stylesheets/review.css" media="all" type="text/css" rel="stylesheet">
+		<link href="/stylesheets/writeareview_search.css" media="all" type="text/css" rel="stylesheet">
+		<style type="text/css">
+			#businessresults .leftcol {float:left; width:270px;}
+			#businessresults .rightcol {float:left; width: 200px;}
+			#businessresults .ybtn{float: right;}
+			#businessresults .itemcategories {width:260px;}
+			#businessresults .itemneighborhoods {width:260px;}
+			.fs_pagination_controls{clear:left;}
+			#loading_bg, #loading_animation{top:2px}
+		</style>
+	</head>
+	<body class="country-us logged-in jquery" id="yelp_main_body">
+		<div id="fb-root" class=" fb_reset">
+			<div style="position: absolute; top: -10000px; height: 0px; width: 0px;">
+				<div><iframe frameborder="0" name="fb_xdm_frame_https" allowtransparency="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" style="border: medium none;" src="https://s-static.ak.facebook.com/connect/xd_arbiter/KFZn1BJ0LYk.js?version=41#channel=f27a0c8ce5f15e&amp;origin=https%3A%2F%2Fwww.yelp.com"></iframe></div>
+			</div>
+			<div style="position: absolute; top: -10000px; height: 0px; width: 0px;">
+				<div></div>
+			</div>
+		</div>
+		<div class="lang-en" id="wrap">
+			<div>
+				<ul class="offscreen">
+					<li>
+						<a rel="nofollow" href="#header_find_form">
+						Skip to Search Form
+						</a>
+					</li>
+					<li>
+						<a rel="nofollow" href="\#header-nav">
+						Skip to Navigation
+						</a>
+					</li>
+					<li>
+						<a rel="nofollow" href="#page-content">
+						Skip to Page Content
+						</a>
+					</li>
+				</ul>
+				<div class="app-header">
+					<div class="header-container clearfix">
+						<h1 class="logo">
+							<a href="/listCategory">Yelp</a>
+						</h1>
+						<div class="header-account webview-hidden">
+							<ul class="logged-out-nav">
+								<li>
+									<a class="ybtn ybtn-primary header-button sign-up" id="header-sign-up" href="http://localhost:4300/logout">Log out</a>
+								</li>
+								<li style="color:white">
+									Welcome <%=name%>, Last Login : <%=lastlogin%>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="print-masthead">
+				<img alt="Yelp" class="print-bkg-img" src="https://s3-media2.fl.yelpcdn.com/assets/2/www/img/b7e9d647188d/gfx/header_print.gif">
+			</div>
+			<span class="offscreen" id="page-content">&nbsp;</span>
+			<div id="super-container">
+				<div id="alert-container">
+					<span class="offscreen">Error message:</span>
+					<div class="alert alert-error">
+						<a href="/listCategory">
+							Home&nbsp;
+						</a>
+						|
+					</div>
+					
+				</div>
+				<div id="maplayout" class="container">
+					<div class="ieSucks clearfix" id="businessresults_top">
+						<div class="ytype">
+							<h2>Categories&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;
+							<%if(isAdmin=="Y"){%>
+							<a class="ybtn ybtn-primary header-button sign-up" id="header-sign-up" href="javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade2').style.display='block'">New Category</a>
+							<%}%>
+							</h2>
+						</div>
+					</div>
+					<div id="searchPanelContainer" class="clearfix layout-block layout-a layout-border">
+							<div id="light2" class="white_content">
+							<div class="column column-alpha ">
+								<form action="http://localhost:4300/addCategory" id="login-form" method="POST" name="login_form">
+									<h2 align="center">Edit Category</h2>
+									<table style="width:50%">
+									  <tr>
+									    <td class="tdClass"><label>Name</label></td>
+									    <td class="tdClass"><input type="text" required="required" tabindex="1" maxlength="64" size="20" class="form200" name="name" value=""></td>		
+									  </tr>
+									  <tr>
+									    <td class="tdClass"><label>Description</label></td>
+									    <td class="tdClass"><input type="textarea" required="required" tabindex="1" maxlength="64" size="20" class="form200" name="description" value=""></td>		
+									  </tr>
+									  <tr colspan="2">
+									  	<td class="tdClass"></td>
+									  	<td class="tdClass"><button class="ybtn ybtn-primary ytype submit" value="submit" type="submit"><span>Update</span></button> &nbsp;&nbsp;&nbsp;<a class="ybtn ybtn-primary header-button sign-up" id="header-sign-up" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade2').style.display='none'">Cancel</a></td>
+									  </tr>
+									</table>		
+								</form>
+							</div>
+						</div>
+						<div id="light3" class="white_content">
+							<div class="column column-alpha ">
+								<form action="http://localhost:4300/deleteCategory" id="login-form" method="GET" name="login_form">
+									<h2 align="center">Are you sure you want to delete this category?</h2>
+									<p align="center"><button class="ybtn ybtn-primary ytype submit" value="submit" type="submit"><span>Yes</span></button> &nbsp;&nbsp;&nbsp;<a class="ybtn ybtn-primary header-button sign-up" id="header-sign-up" onclick = "document.getElementById('light3').style.display='none';document.getElementById('fade2').style.display='none'">No</a></p>
+								</form>
+							</div>
+						</div>
+						<div id="fade2" class="black_overlay"></div>
+							<div id="businessresults">
+								<ul>
+									<% for(var i = 0;i < data.length;i++) { %>
+									<li data-key="1" class="clearfix business-summary" data-component-bound="true">
+										<div class="war-businessresult businessresult">
+											<div class="leftcol">
+												<div >
+													<a style="font-size:16px" href="/getDetails/<%=data[i].name%>"><%=i+1%>.&nbsp;<%=data[i].name%> 
+													</a>
+												</div>
+											</div>
+											<div class="leftcol">
+												<div >
+													Description : <%=data[i].description%>
+												</div>
+											</div>
+											<div class="leftcol">
+												<div align="right">
+													<%=data[i].reviews_count%> reviews
+												</div>
+											</div>
+											<%if(isAdmin=="Y") {%>
+											<div align="right">
+												<a href="javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade2').style.display='block'" ><img src="/images/edit.PNG"/></a>&nbsp;&nbsp;
+												<a href="javascript:void(0)" onclick = "document.getElementById('light3').style.display='block';document.getElementById('fade2').style.display='block'" ><img src="/images/delete.PNG"/></a>
+											</div>
+											<%}%>
+										</div>
+									</li>
+									<%}%>
+									<br clear="all">
+								</ul>
+							</div>
+					</div>
+				</div>
+			</div>
+			<!-- google_ad_section_start(weight=ignore) -->
+			<!-- <a href="/biz/outlook-autumn-market-fundamental-catwalk-flimsy-roost-legibility-individualism-grocer-predestination-7">yelp</a> -->
+			<div class="footer">
+				<div class="footer-wrap">
+					<div class="footer-menu-wrap clearfix">
+					<div class="city-landscape-img"></div>
+					<div class="footer-copyright">
+						<small>
+						Copyright &copy; 2004&ndash;2014 Yelp Inc. Yelp, <img class="footer-copyright-logo" alt="Yelp logo" src="https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9d213bfb766e/logo/logo_tiny.png">, <img class="footer-burst-logo" alt="Yelp burst" src="https://s3-media3.fl.yelpcdn.com/assets/2/www/img/86ec59fef415/logo/burst_tiny.png"> and related marks are registered trademarks of Yelp.
+						</small>
+					</div>
+					<!--Source: Freebase (http://www.freebase.com/), licensed under CC-BY (http://creativecommons.org/licenses/by/2.5/)-->
+					<p class="data-provider-attribution">
+						<small><a target="_blank" href="http://www.databyacxiom.com" rel="nofollow">Some Data By Acxiom</a></small>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

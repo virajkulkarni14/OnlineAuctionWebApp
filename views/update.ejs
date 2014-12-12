@@ -1,0 +1,428 @@
+ 
+<html lang="en_US">
+<head>
+<meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
+<title>Get started with eBay</title>
+<script type="text/javascript">var layer = false;</script>
+<link rel="stylesheet" type="text/css" href="https://secureir.ebaystatic.com/rs/v/kp2d0yxoguy0xnebuz2qnu0zc2t.css">
+<link rel="stylesheet" type="text/css" href="https://secureir.ebaystatic.com/rs/v/jmpqbbql1m0sxlirqtx1kcedxef.css">
+<link href="https://secureir.ebaystatic.com/rs/v/nqbcbh0ana4jfbpsz0xsdlwpamb.css" type="text/css" rel="stylesheet">
+<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+<script>
+// This example displays an address form, using the autocomplete feature
+// of the Google Places API to help users fill in the information.
+var placeSearch, autocomplete;
+var componentForm = {
+street_number: 'short_name',
+route: 'long_name',
+locality: 'long_name',
+administrative_area_level_1: 'short_name',
+country: 'long_name',
+postal_code: 'short_name'
+};
+function initialize() {
+// Create the autocomplete object, restricting the search
+// to geographical location types.
+autocomplete = new google.maps.places.Autocomplete(
+/** @type {HTMLInputElement} */(document.getElementById('autocomplete')),
+{ types: ['geocode'] });
+// When the user selects an address from the dropdown,
+// populate the address fields in the form.
+google.maps.event.addListener(autocomplete, 'place_changed', function() {
+fillInAddress();
+});
+}
+// [START region_fillform]
+function fillInAddress() {
+// Get the place details from the autocomplete object.
+var place = autocomplete.getPlace();
+for (var component in componentForm) {
+document.getElementById(component).value = '';
+document.getElementById(component).disabled = false;
+}
+// Get each component of the address from the place details
+// and fill the corresponding field on the form.
+for (var i = 0; i < place.address_components.length; i++) {
+var addressType = place.address_components[i].types[0];
+if (componentForm[addressType]) {
+var val = place.address_components[i][componentForm[addressType]];
+document.getElementById(addressType).value = val;
+}
+}
+}
+// [END region_fillform]
+// [START region_geolocation]
+// Bias the autocomplete object to the user's geographical location,
+// as supplied by the browser's 'navigator.geolocation' object.
+function geolocate() {
+if (navigator.geolocation) {
+navigator.geolocation.getCurrentPosition(function(position) {
+var geolocation = new google.maps.LatLng(
+position.coords.latitude, position.coords.longitude);
+autocomplete.setBounds(new google.maps.LatLngBounds(geolocation,
+geolocation));
+});
+}
+}
+// [END region_geolocation]
+</script>
+</head>
+<body onload="initialize()">
+<div class="sz980">
+<div class="pgWidth">
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="https://secureir.ebaystatic.com/rs/v/32q2wauokmyjletm4byq40w5s2i.css?proc=DU:N">
+</link><![endif]-->
+<div class="gh-acc-exp-div"><a href="#mainContent" class="gh-acc-a" id="gh-hdn-stm">Skip to main content</a></div>
+<!--[if lt IE 9]>
+<div id="gh" class="gh-IE8 gh-flex gh-w gh-minH no-touch ">
+<![endif]--><!--[if (gte IE 9)|!(IE)]><!-->
+<div class="gh-flex gh-w gh-minH no-touch " id="gh">
+<!--<![endif]-->
+<table class="gh-tbl">
+<tbody>
+<tr>
+<td class="gh-td">
+<!--[if lt IE 9]><a href="http://www.ebay.com/" class="iclg" _sp="m570.l2586" id="gh-la">eBay<img width="117" height="120" style="clip:rect(47px, 118px, 95px, 0px); position:absolute; top:-47px;left:0" alt="" src="https://secureir.ebaystatic.com/rs/v/apstidvcvu5pxlbxkphrrdo5iqv.png" id="gh-logo"></a><![endif]--><!--[if (gte IE 9)|!(IE)]><!--><a id="gh-la" _sp="m570.l2586" class="iclg" href="http://www.ebay.com/">eBay<img width="250" height="200" id="gh-logo" src="https://secureir.ebaystatic.com/rs/v/fxxj3ttftm5ltcqnto1o4baovyl.png" alt="" style="clip:rect(47px, 118px, 95px, 0px); position:absolute; top:-47px;left:0"></a><!--<![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--ts:2014.11.13.00:02--><!--rq:--><!--rvr:58r2rc5-->
+<h1 class="mg"><span id="maincontent" class="shpt">Get started with eBay</span><a style="top: 0px; left: -9999px; position: absolute;" tabindex="-1" name="mainContent">Get started with eBay</a></h1>
+<noscript>&lt;div class="pdt10"&gt;&lt;div class="sm-co sm-er"&gt;&lt;i class="gspr icer"&gt;&lt;/i&gt;&lt;p&gt;
+You must have Java Script enabled to register. &lt;a href="http://pages.ebay.com/help/account/errors.html" target="_blank"&gt;Learn how to enable Java Script.&lt;b class="g-hdn"&gt; - opens in a new window or tab&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+</noscript>
+<table role="presentation" class="mgtb ">
+<tbody>
+<tr>
+<td width="80%" valign="top">
+
+</td>
+<td width="20%" valign="top"></td>
+</tr>
+<tr>
+<td width="80%" valign="top" class="contd cntCr">
+<div class="prg">
+<form id="ppaRegForm" name="ppaRegForm" method="post" action="/update">
+<div style="display:none" id="statErr" class="sm-co sm-er">
+<i class="gspr icer"></i>
+<p tabindex="0" id="ertx">Please fix the errors highlighted in the fields below:<span class="clr"></span></p>
+<ul id="errList"></ul>
+</div>
+<style>
+#statErr li{
+display:none;}
+</style>
+<div id="ppa_id">
+<!--<input type="hidden" value="false" name="isSug" id="isSug"><input type="hidden" value="1" name="countryId" id="countryId"><input type="hidden" value="http://www.ebay.com/" name="ru" id="ru">-->
+<div class="txc">
+<div id="firstname_d" class="rfl">
+<div class="fv-w">
+<label for="firstname">First name</label>
+<div class="fv-tw ">
+<input type="text" aria-required="true" aria-autocomplete="none" a="1" t="1" v="1" class="w242" size="32" id="firstname" value="" name="firstname" maxlength="64" required>
+<div aria-live="assertive" role="alert">
+<div class="rdn" id="firstname_w">Please enter your first name.</div>
+</div>
+</div>
+</div>
+</div>
+<div id="lastname_d" class="rln">
+<div class="fv-w">
+<label for="lastname">Last name</label>
+<div class="fv-tw ">
+<input type="text" aria-required="true" aria-autocomplete="none" a="1" t="1" v="1" class="w242" size="32" id="lastname" value="" name="lastname" maxlength="64" required>
+<div aria-live="assertive" role="alert">
+<div class="rdn" id="lastname_w">Please enter your last name.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="rcl"></div>
+<div>
+<div class="rfl">
+<div class="fv-w wtx">
+<label for="email">Email</label>
+<div class="fv-tw ">
+<input type="email" aria-required="true" a="1" t="1" v="1" class="w242" size="32" placeholder="e.g. cmpe273@example.com" id="email" value="" name="email" maxlength="64" required>
+
+</div>
+</div>
+</div>
+<div class="rcl"></div>
+<!--<input type="hidden" value="" id="userid" name="userid">-->
+<div class="pass_wrp">
+<div id="PASSWORD_d" class="rfl w202">
+<div class="fv-w">
+<label for="PASSWORD">Change your password</label>
+<div class="fv-tw ">
+<input type="password" aria-required="true" oncopy="return false" aria-autocomplete="none" a="1" t="1" v="1" class="w242" aria-describedby="PASSWORD_id" autocorrect="off" autocomplete="off" class="pwd" size="32" id="PASSWORD" value="" name="pass" maxlength="64" required>
+<script>
+var hash = CryptoJS.MD5("pass");
+</script>
+<!--<input type="hidden" value="" id="password" name="password">-->
+<div aria-live="assertive" role="alert">
+<div class="rdn" id="PASSWORD_w">Please enter your password.</div>
+</div>
+</div>
+</div>
+</div>
+<b id="ptck" class="rfl"></b>
+<div id="pass_st" class="rfl re-mt">
+<span id="txt" aria-live="assertive" class="g-nav">Strength</span>
+<div class="re-pn">
+<div id="pwds"></div>
+</div>
+</div>
+<div id="PASSWORD_id" class="pg-tw re-dt">
+<b class="tip"></b>
+<div class="re-p9">
+<ul>
+<li>Use 6 to 64 characters.</li>
+<li>Besides letters, include at least a number or symbol (!@#$%^*-_+=).</li>
+<li>Password is case sensitive.</li>
+<li>Avoid using the same password for multiple sites.</li>
+</ul>
+</div>
+</div>
+<div class="rcl"></div>
+</div>
+<fieldset class="checkbox-set nested">
+<!--<b>User Type:</b>
+<br/>-->
+<label for="buyer">
+<input type="checkbox" id="buyer" name="buyer" value="1" checked>
+Buyer</label>
+<label for="seller">
+<input type="checkbox" id="seller" name="seller" value="2" checked>
+Seller</label><br>
+</fieldset>
+<!--<b>Other Details:</b>-->
+<div class="rcl"></div>
+<label for="firstname">Enter your address</label>
+<div id="locationField">
+<input class="w242" id="autocomplete" placeholder="Enter your address"
+onFocus="geolocate()" type="text"></input>
+</div>
+</div>
+<div class="rcl">
+<div id="firstname_d" class="rfl">
+<div class="fv-w">
+<label for="firstname">Street #</label>
+<div class="fv-tw ">
+<input class="field" id="street_number"
+disabled="true" name="street"></input>
+</div>
+</div>
+</div>
+<div id="lastname_d" class="rln">
+<div class="fv-w">
+<label for="lastname">Address</label>
+<div class="fv-tw ">
+<input class="field" id="route"
+disabled="true" name="address"></input></span>
+</div>
+</div>
+</div>
+</div>
+<div id="firstname_d" class="rfl">
+<div class="fv-w">
+<label for="firstname">City</label>
+<div class="fv-tw ">
+<input class="field" id="locality"
+disabled="true" name="city"></input>
+</div>
+</div>
+</div>
+<div id="lastname_d" class="rln">
+<div class="fv-w">
+<label for="lastname">State</label>
+<div class="fv-tw ">
+<input class="field"
+id="administrative_area_level_1" disabled="true" name="state"></input></input></span>
+</div>
+</div>
+</div>
+</div>
+<div id="firstname_d" class="rfl">
+<div class="fv-w">
+<label for="firstname">ZIP</label>
+<div class="fv-tw ">
+<input class="field" id="postal_code"
+disabled="true" name="zip"></input>
+</div>
+</div>
+</div>
+<div id="lastname_d" class="rln">
+<div class="fv-w">
+<label for="lastname">Country</label>
+<div class="fv-tw ">
+<input class="field"
+id="country" disabled="true" name="country"></input></input></input></span>
+</div>
+</div>
+</div>
+</div>
+<div class="rcl">
+<div>
+<div class="fv-w">
+<label for="contact">Phone number</label>
+<div class="fv-tw ">
+<input maxlength="10" type="text" name="contact" placeholder="Please enter 10 digit number" class="w242" pattern= "[0-9]{10}" value="" id="contact" v="1" a="1" aria-autocomplete="none" ph="1" aria-required="true" autocomplete="off" autocorrect="off" required>
+<div role="alert" aria-live="assertive">
+<div id="dayphone1_w" class="rdn">Please enter a valid phone number.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<!-- shows old term of use with no option for marketing checkbox -->
+
+<!--<input type="hidden" value="true" name="promotion" id="promotion">-->
+</div>
+<div class="h40">
+<div class="rfl">
+<input type="submit" value="Update" class="btn btn-prim" id="sbtBtn">
+</div>
+</div>
+<!--<input type="hidden" value="1" id="mode" name="mode"><input type="hidden" value="submit" id="frmaction" name="frmaction"><input type="hidden" value="0" id="isGuest" name="isGuest"><input type="hidden" value="" id="idlstate" name="idlstate"><input type="hidden" value="" id="profilePicture" name="profilePicture"><input type="hidden" value="Terms and conditions" id="agreement" name="agreement">-->
+</div>
+</form>
+<form action="https://scgi.ebay.com/ws/eBayISAPI.dll" name="BusinessRegistration" id="BusinessRegistration" method="post"></form>
+</div>
+</td>
+<td width="20%" valign="top" id="lcont">
+<div class="pdLft">
+<div>
+<div class="si-lr">
+<div class="si-re">
+
+</div>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<img width="1" height="1" src="https://scgi.ebay.com/ws/eBayISAPI.dll?LogBuyerRegistrationJSEvent&amp;eventid=21&amp;regppapage=1&amp;ru=http%3A%2F%2Fwww.ebay.com%2F&amp;src=rap" alt="" id="track"><img width="1" height="1" src="" alt="" id="trackFb">
+<script type="text/javascript" src="https://secureir.ebaystatic.com/rs/v/n0npp25t2qykfm5jzbva24212mb.js"></script><script type="text/javascript" src="https://secureir.ebaystatic.com/rs/v/a34syhrtsy0avnfsde2nb2h4xyi.js"></script>
+<div class="rsv"><a title="Send us your comments - opens in new window or tab" target="_blank" href="http://qu.ebay.com/survey?srvName=registration%20(ppa-US)">Comments?</a></div>
+<div class="gh-w gh-flex" id="glbfooter">
+<div>
+<div id="rtm_html_1650"></div>
+<div id="rtm_html_1651"></div>
+</div>
+<h2 class="gh-ar-hdn">Additional site navigation</h2>
+<div id="gf-t-box">
+<table class="gf-t">
+<tbody>
+<tr valign="top">
+<td class="gf-legal">Copyright &copy; 1995-2014 eBay Inc. All Rights Reserved. <a href="http://pages.ebay.com/help/policies/user-agreement.html?rt=nc">User Agreement</a>, <a href="http://pages.ebay.com/help/policies/privacy-policy.html?rt=nc">Privacy</a> and <a href="http://pages.ebay.com/help/account/cookies-web-beacons.html">Cookies</a>.</td>
+<td align="center" nowrap=""><a href="https://clicktoverify.truste.com/pvr.php?page=validate&amp;url=www.ebay.com" _exsp="m571.l3946" title="Verify site's TRUSTe certificate"><i id="gf-truste">Norton Secured - powered by Verisign</i></a><a href="https://trustsealinfo.verisign.com/splash?form_file=fdf/splash.fdf&amp;dn=WWW.EBAY.COM&amp;lang=en" onclick="this.href='https://trustsealinfo.verisign.com/splash?form_file=fdf/splash.fdf&amp;lang=en&amp;dn='+location.host;return true;" _exsp="m571.l3943" title="Verify site's SSL certificate"><i id="gf-norton">Norton Secured - powered by Verisign</i></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!--ts:2014.11.13.00:02--><!--rq:--><!--rvr:58r2rc5-->
+<div class="cl-ta errIco" id="cfly">
+<div class="thr thrS">
+<div class="thr-img thr-p" style="display: none;" id="throbberID_th">
+<div class="thr-txt">Processing...</div>
+</div>
+</div>
+<div class="cl-ta" id="con_id">
+<div id="infDv" class="rc-c">Welcome ##1##! Your eBay user ID will be ##2##.</div>
+<div id="pEml" class="rc-st">We'll send messages regarding your account to: ##1## </div>
+<div class="cl-p1">
+<div class="rc-lt flt"><button class="btn btn-prim" id="cfBtn">Continue</button></div>
+<div class="mT"><a href="javascript:;" id="backlnk">Change email address</a></div>
+</div>
+</div>
+</div>
+</div>
+<div role="alertdialog" tabindex="-1" class="oly bub sm" id="oly_1" style="display: none;" aria-describedby="oly_1-ariadesc">
+<div class="arr"></div>
+<div class="offscreen" id="oly_1-ariadesc"></div>
+<div class="oly-h"></div>
+<a title="close" data-dismiss="olay" class="oly-c" href="javascript:;"></a>
+<div class="oly-b"></div>
+<div class="oly-f"></div>
+</div>
+<script type="text/javascript" src="https://secureir.ebaystatic.com/rs/v/xomwjzxla2yunpqgspuu0fjiw2x.js"></script><script type="text/javascript">
+var msgAccessbility = {
+//city and state related
+cityStateSingleMatch1 : "Single match: ",
+cityStateSingleMatch2 : " has been filled in for you based on your ZIP code",
+cityStateMultipleMatches : "Multiple matches: Please select one of the following city and state listed for your ZIP code",
+cityStateCurrentOption: "The following city and state are selected"
+};
+(function() {
+var Context = raptor.require('ebay.context.Context');
+Context.call(Context,{"site":0,"errors":{"enabled":false},"app":"regapp","domain":".ebay.com","pool":"production","cobrand":2,"locale":"en_US_MAIN","features":{},"pid":2052190});
+})();
+var pwLnErr = "Please enter at least 6 characters.";
+var nameGrp = [ "firstname", "lastname", "countryId" ];
+var emailGrp = [ "email" ,"countryId", "lang"];
+var pwdGrp = [ "PASSWORD", "email", "userid", "countryId", "lang" ];
+var rpwdGrp = [ "PASSWORD","rpass", "email", "userid", "countryId", "lang" ];
+var userIdGrp = [ "firstname", "lastname", "email", "userid", "countryId", "lang" ];
+var ajaxFlds = {"firstname":nameGrp,"lastname":nameGrp,"email":emailGrp,"userid":userIdGrp,"PASSWORD":pwdGrp,"rpass":rpwdGrp};
+var ajaxMode = {"firstname":"1","lastname":"2","email":"5","userid":"7","PASSWORD":"6","rpass":"8"};
+var nextElem = "#PASSWORD";
+var pwdMeter = {"Weak":"pg-i pg-pwn","Invalid":"pg-i pg-pin","Strong":"pg-i pg-psn","Medium":"pg-i pg-pmn","Too short":"pg-i pg-pin","Strength":""};
+var logurl = "https://scgi.ebay.com/ws/eBayISAPI.dll?LogBuyerRegistrationJSEvent"+"&amp;regppapage=1";
+var trackFld = {"lastname" : 25,"userid" : 28,"firstname" : 25,"PASSWORD" : 29,"email" : 27,"PASSWORD" : 29};
+var actionUrl = "https://reg.ebay.com/reg/PartialReg";
+var errPos ={"firstname" : 140, "lastname" : 140,"email" : 190, "userid" :230,
+"PASSWORD" : 280 ,"rpass": 330
+};
+var emptyMap = {
+"firstname" : "Please enter your first name.",
+"lastname" : "Please enter your last name.",
+"email" : "Please enter your email address.",
+"userid" : "Please select a user ID.",
+"PASSWORD" : "Please enter your password.",
+"rpass" : "Please enter your password again."
+};
+var pwdFld = ["PASSWORD","Your passwords do not match."];
+var validateFld = {"rpass" : pwdFld};
+var infoMsg = "Welcome to eBay, ##1##!";
+var useridMsg = "Your eBay user ID is ##1##";
+var emailMsg = "We'll send updates about your account to : ##1##";
+var tooSh = "Too short";
+var isInvTxt = "Invalid";
+var pwdSgth = "Strength";
+var frmName= "ppaRegForm";
+var bzFrmName = "BusinessRegistration";
+var bblCnt = { "usbbl" : "Your user ID is shown when you bid, buy, and sell on eBay. It will also be displayed when you contact other eBay members, including sellers."};
+var countryId = 1;
+var isSRFlow = true;
+var simplifyRegFlowSuccess = false;
+var retUrl = "http&amp;#x3a;&amp;#x2f;&amp;#x2f;www.ebay.com&amp;#x2f;";
+var isFB = false;
+var langCode = "en_US";
+var isMobile = "";
+GH = {init:function(){},log:function(){}}; if (typeof GH != "undefined" &amp;&amp; GH) {GH_config = {"siteId":"0","geoLang":"[]",sin:0,pageId:2052190,ct:0};GH.init();}$rwidgets(['regButton','w1-1',0,0,0,0,['ui.Button','w1-2',{"id":"sbtBtn"},'w1-1','sbtBtn']],['ui.Button','w1-3',{"id":"w1-3"}],['confButton','w1-4',0,0,0,0,['ui.Button','w1-5',{"id":"cfBtn"},'w1-4','cfBtn']]);new (raptor.require('raptor.tracking.core.Tracker'))({"psi":"AVby6hGE*","rover":{"imp":"/roverimp/0/0/9","clk":"/roverclk/0/0/9","uri":"https://rover.ebay.com"},"pid":"p2052190"});raptor.require('raptor.tracking.idmap.IdMap').roverService("https://rover.ebay.com/idmap/0?footer");
+</script>
+<div role="alert" tabindex="-1" class="oly" id="oly_2" style="display: none;" aria-describedby="oly_2-ariadesc">
+<div class="offscreen" id="oly_2-ariadesc"></div>
+<div class="oly-h"></div>
+<a title="close" data-dismiss="olay" class="oly-c" href="javascript:;"></a>
+<div class="oly-b"></div>
+<div class="oly-f"></div>
+</div>
+<div class="g-hdn" aria-live="assertive" id="screenReaderStatus"></div>
+</body>
+</html>
+
+   
+

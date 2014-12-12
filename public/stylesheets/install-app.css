@@ -1,0 +1,59 @@
+
+.install-app-landing {
+    margin: 0 -15px;
+    padding: 48px 48px 0;
+}
+.install-app-landing .install-app-copy {
+    font-size: 16px;
+    line-height: 1.3125em;
+    margin-bottom: 24px;
+}
+.install-app-cta, .install-app-devices {
+    box-sizing: border-box;
+    float: left;
+    min-height: 1px;
+    padding: 0 15px;
+    width: 50%;
+}
+.install-app-cta {
+    padding-right: 30px;
+}
+.install-app-cta h1 {
+    margin-bottom: 18px;
+}
+.install-app-features li {
+    margin-top: 24px;
+}
+.install-app-devices {
+    text-align: center;
+}
+.install-app-devices-list {
+    display: inline-block;
+    margin-top: 12px;
+}
+.install-app-devices-list li {
+    float: left;
+}
+.install-app-devices-list li + li {
+    margin-left: 18px;
+}
+.install-app-devices-list a {
+    display: block;
+}
+.ltie8 .install-app-sms {
+    display: none;
+}
+.install-app-landing:before, .install-app-landing:after {
+    content: " ";
+    display: table;
+}
+.install-app-landing:after {
+    clear: both;
+}
+.install-app-devices-list:before, .install-app-devices-list:after {
+    content: " ";
+    display: table;
+}
+.install-app-devices-list:after {
+    clear: both;
+}

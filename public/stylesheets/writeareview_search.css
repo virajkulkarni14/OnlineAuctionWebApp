@@ -1,0 +1,143 @@
+
+.war-landing-content .search-header-wrap {
+    padding: 18px 0 60px;
+}
+.search-feedback-box {
+    box-sizing: border-box;
+    width: 300px;
+}
+.top-shelf {
+    padding: 18px 0;
+}
+.top-shelf h2 {
+    padding: 12px 0;
+}
+.search-result .war-button-wrap .ybtn {
+    visibility: hidden;
+}
+.search-result:hover .war-button-wrap .ybtn {
+    visibility: visible;
+}
+#searchLayoutMainResults {
+    min-height: 720px;
+}
+.searchSuggest {
+    clear: left;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+.searchSuggestContainer {
+    clear: left;
+    float: left;
+    margin-bottom: 14px;
+}
+#loading_animation {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #ed5100;
+    font-size: 11px;
+    padding: 0 2px 0 0;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    top: 25px;
+    z-index: 8;
+}
+#loading_animation img {
+    margin: 0 2px 0 3px;
+    vertical-align: middle;
+}
+#businessresults_top .locationdesc {
+    color: #333;
+    font-weight: normal;
+    margin-bottom: 3px;
+}
+.business-search-form {
+    margin: 12px 0;
+}
+.businessresult {
+    border-bottom: 1px solid #ccc;
+    margin: 10px 10px 10px 15px;
+    padding: 5px 0 0;
+    width: 96.5%;
+}
+.businessresult h2 {
+    font-size: 12px;
+    margin: 0 0 3px;
+}
+.businessresult address {
+    clear: left;
+}
+.businessresult .leftcol {
+    float: left;
+    width: 60%;
+}
+.businessresult .rightcol {
+    float: right;
+    width: 200px;
+}
+.businessresult .rightcol .rating {
+    float: left;
+    margin: 0 3px 4px 0;
+}
+.businessresult .rightcol div {
+    clear: left;
+    position: relative;
+}
+.businessresult .reviews {
+    color: #999;
+    font-size: 11px;
+    line-height: 14px;
+    position: relative;
+}
+.businessresult .itemcategories, .businessresult .itemneighborhoods, .businessresult .itemmatchedattrs, .businessresult .itemhours, .businessresult .itemcost, .businessresult .itemannouncement {
+    font-size: 11px;
+    margin-bottom: 3px;
+}
+#businessresults .war-businessresult {
+    padding-bottom: 20px;
+}
+.last-businessresult {
+    border-bottom: 0 solid #000;
+}
+.itemheading {
+    font-weight: normal;
+    margin-bottom: 2px;
+}
+#searchLayoutMainResults #error_result {
+    min-height: 120px;
+}
+#searchLayoutMainResults #error_result img.alignmid {
+    cursor: pointer;
+}
+#searchLayoutMainResults #error_result li.error_suggestion {
+    font-size: 14px;
+    font-weight: bold;
+}
+#bizSuggest {
+    clear: both;
+    overflow: hidden;
+    padding: 15px 0;
+}
+#bizSuggest h3 {
+    font-size: 16px;
+}
+#bizSuggest .ybtn {
+    float: right;
+    margin-top: -50px;
+}
+.map-wrapper {
+    position: relative;
+}
+.ie6 #mapLayout #searchLayoutMainResults {
+    height: 720px;
+    overflow: visible;
+}
+.ie6 #mapLayout #more_attrib_wrapper, .ie6 #mapLayout #more_places_wrapper {
+    height: 300px;
+}
+.ie6 #mapLayout .narrow #more_places_wrapper {
+    height: 250px;
+}
+.ie6 #mapLayout #searchLayoutMainResults #error_result {
+    height: 120px;
+}
